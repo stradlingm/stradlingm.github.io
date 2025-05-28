@@ -3,6 +3,7 @@ body {
 }
 
 h1 {
+    /* Made color hotpink and border-bottom 10px dotted purple */
   color: hotpink;
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -11,6 +12,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
+  /* Made h2 font italic */
   font-style: italic;
 }
 
@@ -26,8 +28,11 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  /* Made links green when hovered over */
   color: green;
 }
+
+/* Styled the ul element with background-color, border, and padding */
 
 ul {
     background-color: #eeeeee;
