@@ -18,11 +18,21 @@ div {
   /* Font size default is html default of 16px (1rem) so set to 1.2rem (18px) */
   font-size: 1.2rem;
   background-color: rgba(29, 50, 236, 0.932);
-  background-color: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+  background-color: linear-gradient(
+    /* Starts bottom right */
+    to bottom right,
+    /* At start */
+    rgba(0, 0, 0, 0) 0%,
+    /* At 30% of shape */
+    rgba(0, 0, 0, 0.2) 30%,
+    /* The rest of the shape */
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  /* Text color */
   color: white;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px 2px black,
-              inset 2px 2px 10px rgba(255, 255, 255, 0.5),
-              inset -2px -2px 10px 1px rgba(0, 0, 0, 0.5);
 
+  /* Three box shadows */
+  box-shadow: 2px 2px 5px 2px black, inset 2px 2px 10px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 10px 1px rgba(0, 0, 0, 0.5);
 }
