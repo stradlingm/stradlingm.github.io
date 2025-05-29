@@ -12,14 +12,24 @@
     -->
     <link href="./css/minimal-table.css" rel="stylesheet" type="text/css">
   </head>
+
+  <!-- Start of Body -->
   <body>
+    
     <h1>Planets data</h1>
+
+    <!-- Start of table element -->
       <table>
+        <!-- Caption tag -->
         <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>)</caption>
+
+        <!-- Colgroup for black border -->
         <colgroup>
           <col span="2">
           <col span="1" style="border: 2px solid #000000;">
         </colgroup>
+
+        <!-- Start of thead section -->
         <thead>
           <tr>
             <td colspan="2"></td>
@@ -36,7 +46,10 @@
           </tr>
         </thead>
 
+        <!-- Start of tbody section -->
         <tbody>
+
+          <!-- Terrestrial Planets -->
           <tr>
             <th scope="rowgroup" rowspan="4" colspan="2">Terrestrial planets</th>
             <th scope="row">Mercury</th>
@@ -87,6 +100,7 @@
             <td>The red planet</td>
           </tr>
           <tr>
+            <!-- Jovian and Gas Giants -->
             <th scope="rowgroup" rowspan="4">Jovian planets</th>
             <th scope="rowgroup" rowspan="2">Gas giants</th>
             <th scope="row">Jupiter</th>
@@ -113,6 +127,7 @@
             <td></td>
           </tr>
           <tr>
+            <!-- Ice Giants -->
             <th scope="rowgroup" rowspan="2">Ice giants</th>
             <th scope="row">Uranus</th>
             <td>86.8</td>
@@ -138,6 +153,7 @@
             <td></td>
           </tr>
           <tr>
+            <!-- Dwarf Planets -->
             <th scope="rowgroup" rowspan="2"colspan="2">Dwarf planets</th>
             <th scope="row">Pluto</th>
             <td>0.0146</td>
