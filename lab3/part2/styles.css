@@ -3,3 +3,21 @@ html {
 }
 
 /* Your CSS below here */
+body {
+  box-sizing: border-box;
+}
+
+div {
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+
+  /* Font size default is html default of 16px (1rem) so set to 1.2rem (18px) */
+  font-size: 1.2rem;
+  background-color: rgba(29, 50, 236, 0.932);
+  color: white;
+  border-radius: 15px;
+}
