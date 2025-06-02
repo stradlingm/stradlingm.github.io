@@ -8,9 +8,6 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
-  line-height: 2.2rem;
-  letter-spacing: 0.8px;
-  word-spacing: 0.7px;
 }
 
 /* Layout */
@@ -64,6 +61,9 @@ footer {
 html {
     font-family: bodyFont;
     font-size: 10px;
+    line-height: 2.2rem;
+    letter-spacing: 0.8px;
+    word-spacing: 0.7px;
 }
 
 aside ul, section ul{
@@ -97,13 +97,30 @@ li {
   line-height: 2.2rem;
 }
 
+.indent-paragraph {
+  text-indent: 20px;
+}
+
+nav ul li {
+  border: 2px solid #a66;
+  text-align: center;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px;
+}
+
+nav ul li a {
+  font-family: headingFont;
+  font-size: 1.8rem;
+  
+}
+
 header h1 {
     text-align: center;
 }
 
-.indent-paragraph {
-    text-indent: 20px;
-}
 
 a:link {
   color: #a66;
