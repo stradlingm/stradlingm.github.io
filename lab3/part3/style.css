@@ -116,10 +116,14 @@ nav ul li {
   box-shadow: 2px 2px 5px;
 }
 
-nav ul li a {
+nav ul li a:link {
   font-family: headingFont;
   font-size: 1.8rem;
-  
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: rgb(238, 175, 175);
 }
 
 /* LINK SELECTORS w/ STATES */
