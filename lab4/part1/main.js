@@ -31,7 +31,7 @@ function result() {
     const zItem = randomValueFromArray(insertZ);
 
     // Replace method for item constants
-    newStory = newStory.replace(":insertx:", xItem);
+    newStory = newStory.replaceAll(":insertx:", xItem);
     newStory = newStory.replace(":inserty:", yItem);
     newStory = newStory.replace(":insertz:", zItem);
   
