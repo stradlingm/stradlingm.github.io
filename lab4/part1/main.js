@@ -32,15 +32,19 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
+    newStory = newStory.replace("Bob", name);
     
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+    const weight = Math.round(300 * 0.0714286 + " stone");
+    const temperature =  Math.round(5 / 9 * (94 - 32) + " centigrade");
+
+    newStory = newStory.replace("94 fahrenheit", temperature);
+    newStory = newStory.replace("300 pounds", weight);
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
