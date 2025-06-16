@@ -3,11 +3,12 @@ body {
 }
 
 h1 {
-    /* Made color hotpink and border-bottom 10px dotted purple */
+    /* Made color hotpink and border-bottom 10px dotted purple, padding-bottom 5px */
   color: hotpink;
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
   border-bottom: 10px dotted purple;
+  padding-bottom: 5px;
 }
 
 h2 {
@@ -37,5 +38,10 @@ a:hover {
 ul {
     background-color: #eeeeee;
     border: 5px solid purple;
-    padding: 25px 30px;
+    padding: 15px 30px;
 }
+
+/* Added 10px padding to list elements */
+li {
+  padding: 10px;
+} 
