@@ -17,10 +17,10 @@ const pictureAltText = {
 }
 
 /* Looping through images */
-
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
-
+for (let i = 1; i <= pictureArray.length; i++) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', "./images/pic" + i + ".jpg");
+    newImage.setAttribute('alt', pictureAltText["pic" + i + ".jpg"]);
+    thumbBar.appendChild(newImage);
+}
 /* Wiring up the Darken/Lighten button */
