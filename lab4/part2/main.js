@@ -30,3 +30,18 @@ for (let i = 1; i <= pictureArray.length; i++) {
    });
 }
 /* Wiring up the Darken/Lighten button */
+btn.addEventListener("click", () => {
+
+    // Selection statement to change overlay to light if class is dark
+    if (btn.getAttribute("class") == "dark") {
+        btn.setAttribute("class", "light");
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
+
+      // Selection statement that changes overlay to dark if class is light  
+    } else if (btn.getAttribute("class") == "light") {
+        btn.setAttribute("class", "dark");
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0%)";
+    }
+})
