@@ -39,7 +39,7 @@ btn.addEventListener("click", () => {
         overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
 
       // Selection statement that changes overlay to dark if class is light  
-    } else if (btn.getAttribute("class") == "light") {
+    } else {
         btn.setAttribute("class", "dark");
         btn.textContent = "Darken";
         overlay.style.backgroundColor = "rgb(0 0 0 / 0%)";
