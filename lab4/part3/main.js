@@ -58,6 +58,21 @@ class Ball {
         this.x += this.velX;
         this.y += this.velY;
     }
+
+    // Collision detection function for when any ball runs into eachother and changes the color of the collided balls
+    collisionDetect() {
+        for (const ball of balls) {
+            if (this !== ball) {
+                const dx = this.x - ball.x;
+                const dy = this.y - ball.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < this.size + ball.size) {
+                    ball.color = this.color = randomRGB();
+                }
+            }
+        }
+    }
 }
 // Code that will create and store up to 25 instances of our balls 
 const balls = [];
@@ -94,6 +109,7 @@ function loop() {
     for (const ball of balls) {
         ball.draw();
         ball.update();
+        ball.collisionDetect();
     }
 
     requestAnimationFrame(loop);
