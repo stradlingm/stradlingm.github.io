@@ -59,3 +59,23 @@ class Ball {
         this.y += this.velY;
     }
 }
+// Code that will create and store up to 25 instances of our balls 
+const balls = [];
+
+while (balls.length < 25) {
+    const size = random(10, 20);
+    const ball = new Ball(
+        /* 
+            Ball position always drawn at least one ball width
+            away from the edge of the canvas, to avoid drawing errors
+        */
+       random(0 + size, width - size),
+       random(0 + size, height - size),
+       random(-7, 7),
+       random(-7, 7),
+       randomRGB(),
+       size,
+    );
+
+    balls.push(ball);
+}
