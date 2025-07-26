@@ -79,3 +79,24 @@ while (balls.length < 25) {
 
     balls.push(ball);
 }
+/*
+    Loop function that sets the canvas fill color to semi-transparent black,
+    draws a colored rectangle accross the whole canvas,
+    Loops through all of the balls in the balls array running draw() and update()
+    for each one,
+    and recursively calls the function over and over again 
+
+*/
+function loop() {
+    ctx.fillStyle = "rgb(0 0 0 / 25%)";
+    ctx.fillRect(0, 0, width, height);
+
+    for (const ball of balls) {
+        ball.draw();
+        ball.update();
+    }
+
+    requestAnimationFrame(loop);
+}
+
+loop();
