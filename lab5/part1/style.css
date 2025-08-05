@@ -55,8 +55,11 @@ p, li, table {
 
 /* || header layout */
 
-/* Changed background from green to white to fix contrast */
-div[class="nav"], article, footer, .secondary {
+/* 
+  Changed background from green to white to fix contrast,
+  Added nav tag
+*/
+nav, article, footer, .secondary {
   background-color: #FFFFFF;
 }
 
@@ -68,7 +71,8 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+/* Added as nav tag */
+nav {
   height: 50px;
   background-color: ff80ff;
   display: flex;
@@ -76,20 +80,22 @@ div[class="nav"] {
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+/* Added as nav tag */
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+/* Added as nav tag */
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -97,7 +103,7 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
