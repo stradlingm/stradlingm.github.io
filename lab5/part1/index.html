@@ -141,21 +141,26 @@
           <p>He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p>
 
         </aside>
+
+        <!-- Added tabindex to allow the show comment button to be tabable -->
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <div class="show-hide" tabindex="0">Show comments</div>
 
           <div class="comment-wrapper">
 
             <h2>Add comment</h2>
             
-            <!-- Added appropriate aria-labels on form input elements -->
+            <!-- 
+            Added appropriate aria-labels on form input elements,
+            Added appropriate labels for name and comment 
+            -->
             <form class="comment-form">
               <div class="flex-pair">
-                Your name:
+                <label for="name">Your name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="Input your name">
               </div>
               <div class="flex-pair">
-                Your comment:
+                <label for="comment">Your comment:</label>
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-label="Input your comment">
               </div>
               <div>

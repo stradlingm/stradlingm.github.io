@@ -45,3 +45,11 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+// Added the ability to open comment element with the ENTER key when tab-focused
+document.onkeydown = (e) => {
+  if (e.key === "Enter") {
+    document.activeElement.click();
+  }
+};
+
